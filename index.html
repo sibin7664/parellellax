@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful Parallax Website</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS for Parallax Effect -->
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .parallax {
+      background-image: url('https://cdn.dribbble.com/users/1066755/screenshots/4492190/nike_ink.gif'); /* Replace with your image */
+      height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .dark-overlay {
+      background-color: rgba(21, 20, 20, 0.6);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .dark-overlay h1 {
+      color: rgb(212, 212, 212);
+      font-size: 4em;
+      text-align: center;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    .content-section {
+      padding: 80px 0;
+      background-color: rgb(70, 56, 55);
+      text-align: center;
+    }
+
+    .content-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #a5a2a2;
+    }
+
+    .content-section p {
+      font-size: 1.1em;
+      color: #777;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .navbar {
+      background-color: rgb(4, 4, 4);
+      position: fixed;
+      width: 100%;
+      z-index: 999;
+    }
+
+    .navbar-brand, .navbar-nav .nav-link {
+      color: rgb(244, 232, 232) !important;
+    }
+
+    .footer {
+      background-color: #333;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #f8f9fa;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #f2c40d;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Parallax</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section4">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Parallax Section 1 -->
+  <section class="parallax" id="section1">
+    <div class="dark-overlay">
+      <h1>Welcome to Nike World</h1>
+    </div>
+  </section>
+
+  <!-- Content Section 1 -->
+  <section class="content-section" id="section2">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Based in Beaverton, Oregon, NIKE, Inc. includes the Nike, Converse, and Jordan brands. Nike is the leading sports brand in the world because we keep athletes at the center of everything we do. We empower people through innovative products, services and experiences, engineered for the future of sport.</p>
+    </div>
+  </section>
+
+  <!-- Parallax Section 2 -->
+  <section class="parallax" style="background-image: url('https://research-assets.cbinsights.com/2021/12/15050530/RTFKT-Image-1024x471.png');" id="section3">
+    <div class="dark-overlay">
+      <h1>Our Services</h1>
+    </div>
+  </section>
+
+  <!-- Content Section 2 -->
+  <section class="content-section" id="section4">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Effective communication is vital for any successful business. Nike acknowledges this and has invested in providing exceptional customer service to ensure customer satisfaction. Whether you have a question, concern, or simply want to provide feedback, reaching out to Nike can help establish a more meaningful connection.</p>
+    </div>
+  </section>
+
+  <!-- Parallax Section 3 -->
+  <section class="parallax" style="background-image: url('https://hips.hearstapps.com/hmg-prod/images/index-bomber-65a839208f31a.jpg');">
+    <div class="dark-overlay">
+      <h1>New Arrival</h1>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 nike Design. All Rights Reserved.</p>
+      <p><a href="#">Back to Top</a></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and Dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
